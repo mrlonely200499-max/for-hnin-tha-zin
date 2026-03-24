@@ -6,6 +6,8 @@ function moveRandomEl(elm) {
 
 const moveRandom = document.querySelector("#move-random");
 
-moveRandom.addEventListener("mouseenter", function (e) {
+// mouseenter အစား 'click' လို့ ပြောင်းလိုက်ပါ
+moveRandom.addEventListener("click", function (e) {
+    e.preventDefault(); // link က တခြားနေရာကို ခုန်မသွားအောင် တားတာပါ
     moveRandomEl(e.target);
 });
